@@ -1,6 +1,6 @@
 cask "devtidy" do
-  version "0.1.1"
-  sha256 "55e86998c297b761568d459d1da1260d138529e5b439361fa8c7633511b1cf21"
+  version "0.1.2"
+  sha256 "29ef449303f54fa105d114544a70577946e75272efef8a07f0ba5f140f6b4233"
 
   url "https://github.com/suleymanozcan/devtidy/releases/download/v#{version}/DevTidy-#{version}.dmg"
   name "DevTidy"
