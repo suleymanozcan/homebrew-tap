@@ -1,6 +1,6 @@
 cask "devtidy" do
-  version "0.1.0"
-  sha256 "45f26f7bd9e3ccaab8d0a6e35440e8cf72f2c43acc02088a76abd9407ead8014"
+  version "0.1.1"
+  sha256 "55e86998c297b761568d459d1da1260d138529e5b439361fa8c7633511b1cf21"
 
   url "https://github.com/suleymanozcan/devtidy/releases/download/v#{version}/DevTidy-#{version}.dmg"
   name "DevTidy"
@@ -12,6 +12,7 @@ cask "devtidy" do
     strategy :github_latest
   end
 
+  auto_updates true
   depends_on macos: :sonoma
 
   app "DevTidy.app"
@@ -19,6 +20,7 @@ cask "devtidy" do
   uninstall quit: "dev.minata.DevTidy"
 
   zap trash: [
+    "~/Library/Caches/dev.minata.DevTidy",
     "~/Library/Logs/DevTidy",
     "~/Library/Preferences/dev.minata.DevTidy.plist",
   ]
